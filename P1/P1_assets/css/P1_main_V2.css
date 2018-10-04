@@ -53,6 +53,37 @@
   left:-10px;
   top: 1600px;
 }
+.back_2.hide{
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #d7dbe2;
+  transition: all 1slinear;
+  left:-10px;
+  top: 1600px;
+}
+.back_3{
+    z-index: 7;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #2a363b;
+    /* float:right; */
+    top: 2375px;
+    left: 710px;
+}
+/* .back_3.hide{
+    z-index: 7;
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    background-color: #2a363b;
+      transition: all 1slinear;
+    /* float:right; */
+    top: 0px;
+    left: 710px;
+} */
+
 .rect_60{
   width: 60px;
   height: 5px;
@@ -62,7 +93,8 @@
   left: 50px;
 }
 .hide{
-  opacity: 0.01;
+  position: absolute;
+  opacity: 0;
 }
 .down{
   float: left;
@@ -79,7 +111,7 @@
 } */
 
 .celamus_c_rect_40{
-  width: 40px;
+  width: 45px;
   height: 5px;
   background-color: #d7dbe2;
   position: absolute;
@@ -90,10 +122,9 @@
 }
 .celamus_c_rect_40.tall{
   position: absolute;
-  left: 254px;
-  width: 60px;
+  left: 255px;
   height: 160px;
-  background-color: #2a363b;
+  background-color: #d7dbe2;
   bottom:-210px;
   transition: all 1s;
   z-index: 100;
@@ -147,8 +178,7 @@
 }
 .celamus_e_rect_60.tall{
   height: 160px;
-  width: 61px;
-  background-color: #2a363b;
+  background-color: #d7dbe2;
   bottom:-210px;
   transition: all 1s linear;
   z-index: 102;
@@ -362,7 +392,7 @@
   left: 355px;
 }
 .celamus_u{
-  left: 435px;
+  left: 440px;
   position: relative;
   transform: scale(1.5);
   top: -475px;
@@ -422,7 +452,7 @@
   left: 115px;
 }
 .celamus_s{
-  left: 795px;
+  left: 812px;
   position: relative;
   transform: scale(1.5);
   top: -475px;
@@ -550,7 +580,7 @@ transition: all 1s linear;
   left: 747px;
 }
 .hide_h{
-  left: 90px;
+  left: 88.5px;
   position: relative;
   transform: scale(0.6);
   top: 515px;
@@ -694,6 +724,22 @@ transition: all 1s linear;
   position: relative;
   transform: scale(0.6);
   top: 515px;
+}
+.a_rect_60{
+  width: 60px;
+  height: 5px;
+  background-color:#2a363b;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.a_rect_60_2{
+  width: 60px;
+  height: 5px;
+  background-color:#2a363b;
+  position: absolute;
+  top: 170px;
+  left: 50px;
 }
 .a_rect_160{
   width: 5px;
@@ -1690,107 +1736,163 @@ transition: all 1s linear;
 
 .a{
   position: relative;
-  left: 90px;
+  left: 50px;
+  top: 40px;
 }
 .b{
   position: relative;
-  left: 85px;
+  left: 38px;
+  top:40px;
 }
 .c{
   position: relative;
-  left: 85px;
+  left: 33px;
+  top:40px;
 }
 .d{
   position: relative;
-  left: 80px;
+  left: 23px;
+  top:40px;
 }
 .e{
   position: relative;
-  left: 70px;
+  left: 8px;
+  top:40px;
 }
 .f{
   position: relative;
-  left: 60px;
+  left: -5px;
+  top:40px;
 }
 .g{
   position: relative;
-  left: 55px;
+  left: -15px;
+  top:40px;
 }
 .h{
   position: relative;
-  left: 60px;
+  left: -20px;
+  top:40px;
 }
 .i{
   position: relative;
-  left: 50px;
+  left: 765px;
+  top:-160px;
 }
 .j{
   position: relative;
-  left: 60px;
+  left: 765px;
+  top:-160px;
 }
 .k{
   position: relative;
-  left: 60px;
+  left: 763px;
+  top:-160px;
 }
 .l{
   position: relative;
-  left: 70px;
+  left: 765px;
+  top:-160px;
 }
 .m{
   position: relative;
-  left: 85px;
+  left: 770px;
+  top:-160px;
 }
 .n{
   position: relative;
-  left: 85px;
+  left: -380px;
+  top:65px;
 }
 .o{
   position: relative;
-  left: 105px;
+  left: -370px;
+  top:65px;
 }
 .p{
   position: relative;
-  left: 135px;
+  left: -350px;
+  top:65px;
 }
 .q{
   position: relative;
-  left: 145px;
+  left: -355px;
+  top:65px;
 }
 .r{
   position: relative;
-  left: 50px;
+  left: 385px;
+  top:-130px;
 }
 .s{
   position: relative;
-  left: 50px;
+  left: 380px;
+  top:-135px;
 }
 .t{
   position: relative;
-  left: 55px;
+  left: 388px;
+  top:-135px;
 }
 .u{
   position: relative;
-  left: 55px;
+  left: 390px;
+  top:-135px;
 }
 .v{
   position: relative;
-  left: 60px;
+  left: 385px;
+  top:-135px;
 }
 .w{
   position: relative;
-  left: 70px;
+  left: 390px;
+  top:-135px;
 }
 .x{
   position: relative;
-  left: 70px;
+  left: 392px;
+  top:-135px;
 }
 .y{
   position: relative;
-  left: 85px;
+  left: 395px;
+  top:-135px;
 }
 .z{
   position: relative;
-  left: 100px;
+  left: 400px;
+  top:-135px;
+}
+.period{
+  position: absolute;
+  left: -500px;
+  top:275px;
+}
+.comma{
+  position: absolute;
+  left: -480px;
+  top:275px;
+}
+.exclaimation{
+  position: absolute;
+  left: -295px;
+  top:275px;
+}
+.question{
+  position: absolute;
+  left: -390px;
+  top:275px;
+}
+.quotat{
+  position: absolute;
+  left: -335px;
+  top:275px;
+}
+.quotat_2{
+  position: absolute;
+  left: -420px;
+  top:375px;
 }
 .rotate{
   transform: rotate(90deg);
@@ -2150,24 +2252,7 @@ transition: all 1s linear;
   top: 973px;
   left: 996px;
 }
-.period{
 
-}
-.comma{
-
-}
-.exclaimation{
-
-}
-.question{
-
-}
-.quotat{
-
-}
-.quotat_2{
-
-}
 .one_20{
   Width: 20px;
   height: 5px;
@@ -3452,16 +3537,7 @@ background: grey;
 /* .container{
   overflow: hidden;
 } */
-.back_3{
-    z-index: 7;
-    width: 50vw;
-    height: 100vh;
-    position: relative;
-    background-color: #2a363b;
-    /* float:right; */
-    top: 0px;
-    left: 710px;
-}
+
 .ithink{}
 .ithink_i{
   position: relative;

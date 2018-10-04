@@ -68,6 +68,17 @@ let celamus_c = document.querySelector('.celamus_c')
        $(".hide_e_rect_60").toggleClass("tall");
     });
 
+    $(".back_3").on("click", function() {
+       $(".ithink").toggleClass("hide");
+       $(".therefore").toggleClass("hide");
+       $(".isuffer").toggleClass("hide");
+    });
+    $(".back_2").on("click", function() {
+       $(".colito").toggleClass("hide");
+       $(".ergo").toggleClass("hide");
+       $(".doleo").toggleClass("hide");
+    });
+
 
     // $(document).ready(function(){
     //   var multiplier = 20;
