@@ -95,6 +95,7 @@
 .hide{
   position: absolute;
   opacity: 0;
+  transition: all 1.5s;
 }
 .down{
   float: left;
@@ -162,7 +163,7 @@
   left: 295px;
 }
 .celamus_c{
-  left: 0px;
+  left: 80px;
   top: 125px;
   position: relative;
   transform: scale(1.5);
@@ -180,7 +181,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-210px;
-  transition: all 1s linear;
+  transition: all 1s;
   z-index: 102;
   }
 .celamus_e_rect_40{
@@ -224,7 +225,7 @@
   left: 300px;
 }
 .celamus_e{
-  left: 100px;
+  left: 180px;
   top: 125px;
   position: relative;
   transform: scale(1.5);
@@ -241,7 +242,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-410px;
-  transition: all 1s linear;
+  transition: all 1s;
   }
 .celamus_l_rect_160{
   Width: 5px;
@@ -260,7 +261,7 @@
   left: 350px;
 }
 .celamus_l{
-  left: 133px;
+  left: 213px;
   position: relative;
   transform: scale(1.5);
   top: -175px;
@@ -293,7 +294,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-410px;
-  transition: all 1s linear;
+  transition: all 1s;
   }
 .celamus_a_rect_60_2{
   width: 60px;
@@ -304,7 +305,7 @@
   left: 50px;
 }
 .celamus_a{
-  left: 609px;
+  left: 689px;
   top: 125px;
   position: relative;
   transform: scale(1.5);
@@ -321,7 +322,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-410px;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .celamus_m_rect_20{
   Width: 20px;
@@ -356,7 +357,7 @@
   left: 420px;
 }
 .celamus_m{
-  left: 224px;
+  left: 304px;
   position: relative;
   transform: scale(1.5);
   top: -175px;
@@ -373,7 +374,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-610px;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .celamus_u_rect_160{
   Width: 5px;
@@ -392,7 +393,7 @@
   left: 355px;
 }
 .celamus_u{
-  left: 440px;
+  left: 520px;
   position: relative;
   transform: scale(1.5);
   top: -475px;
@@ -409,7 +410,7 @@
   height: 160px;
   background-color: #d7dbe2;
   bottom:-610px;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .celamus_s_rect_40{
   Width: 40px;
@@ -452,7 +453,7 @@
   left: 115px;
 }
 .celamus_s{
-  left: 812px;
+  left: 892px;
   position: relative;
   transform: scale(1.5);
   top: -475px;
@@ -469,7 +470,7 @@
 .to_t_rect_60.tall{
     height: 160px;
     background-color: #d7dbe2;
-    transition: all 1s linear;
+    transition: all 1s;
 }
 .to_t_rect_160{
   Width: 5px;
@@ -496,10 +497,10 @@
   left: 228px;
 }
 .to_t{
-  left: 305px;
+  left: 545px;
   position: relative;
   transform: scale(.6);
-  top: 275px;
+  top: 277px;
 }
 
 .to_o_rect_40{
@@ -521,7 +522,7 @@
 .to_o_rect_40_2.tall{
   Width: 40px;
   height: 160px;
-transition: all 1s linear;
+transition: all 1s;
 }
 .to_o_rect_160{
   Width: 5px;
@@ -540,10 +541,10 @@ transition: all 1s linear;
   left: 595px;
 }
 .to_o{
-  left: 150px;
+  left: 395px;
   position: relative;
   transform: scale(0.6);
-  top: 395px;
+  top: 397px;
 }
 .hide_h_rect_160{
   width:5px;
@@ -559,13 +560,13 @@ transition: all 1s linear;
   background-color:#d7dbe2;
   position: absolute;
   top: 50px;
-  /* left: 800px; */
-  right: 584px;
+  /* left: 802px; */
+  right: 1911px;
 }
 .hide_h_rect_160_2.tall{
-  width:60px;
+  width:61px;
   height: 160px;
-  transition: all 1s linear;
+  transition: all 1s;
 
   /* right: 800px; */
   /* top: 50px;
@@ -577,13 +578,14 @@ transition: all 1s linear;
   background-color:#d7dbe2;
   position: absolute;
   top: 170px;
-  left: 747px;
+  left: 748px;
 }
 .hide_h{
   left: 88.5px;
-  position: relative;
+  position: absolute;
   transform: scale(0.6);
-  top: 515px;
+  top: 525px;
+  right:-1401px;
 }
 
 .hide_i_rect_40{
@@ -605,7 +607,7 @@ transition: all 1s linear;
 .hide_i_rect_40_2.tall{
   Width:40px;
   height: 160px;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .hide_i_rect_160{
   Width: 5px;
@@ -616,10 +618,10 @@ transition: all 1s linear;
   left: 67.5px;
 }
 .hide_i{
-  left: 551px;
-  position: relative;
+  left: 1102px;
+  position: absolute;
   transform: scale(0.6);
-  top: 395px;
+  top: 405px;
 }
 .hide_d_rect_60{
   width: 60px;
@@ -657,13 +659,13 @@ transition: all 1s linear;
   width: 60px;
   height: 160px;
   position: absolute;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .hide_d{
-  left: 409px;
+  left: 680px;
   position: relative;
   transform: scale(0.6);
-  top: 515px;
+  top: 517px;
 }
 .hide_e_rect_60{
   width: 60px;
@@ -677,7 +679,7 @@ transition: all 1s linear;
   width: 60px;
   height: 160px;
   background-color: #d7dbe2;
-  transition: all 1s linear;
+  transition: all 1s;
 }
 .hide_e_rect_40{
   width: 20px;
@@ -721,9 +723,17 @@ transition: all 1s linear;
 }
 .hide_e{
   left: 390px;
-  position: relative;
+  position: absolute;
   transform: scale(0.6);
-  top: 515px;
+  top: 525px;
+  right:-1801px;
+}
+
+.to{
+
+}
+.hide{
+
 }
 .a_rect_60{
   width: 60px;
@@ -3542,7 +3552,7 @@ background: grey;
 .ithink_i{
   position: relative;
   top: -160px;
-  left: 170px;
+  left: 175px;
 }
 .ithink_i_40{
   Width:40px;
