@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clock</title>
+  <script src="js/Interactive2_Ex2_Clock.js" defer></script>
+  <style>
+
+  body{
+    background: black;
+    min-height: 100vh;
+  }
+
+  img{
+    height: 130px;
+    width: 200px;
+    float: left;
+  }
+
+  #clock{
+    top: calc(50vh - 65px);
+  	left: calc(50vw - 800px);
+    position: relative;
+
+  }
+
+</style>
+</head>
+<body>
+    <div id="clock">
+      <img id="hour1" src="GIFs/0.gif">
+      <img id="hour2" src="GIFs/0.gif">
+      <img src="GIFs/colon.gif">
+      <img id="minutes1" src="GIFs/0.gif">
+      <img id="minutes2" src="GIFs/0.gif">
+      <img src="GIFs/colon.gif">
+      <img id="seconds1" src="GIFs/0.gif">
+      <img id="seconds2" src="GIFs/0.gif">
+
+    </div>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>
