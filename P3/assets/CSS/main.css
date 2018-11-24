@@ -1,0 +1,176 @@
+* {margin: 0; padding: 0;}
+@import url("https://use.typekit.net/opt2ghy.css");
+@import url("https://use.typekit.net/opt2ghy.css");
+
+
+
+p {position: absolute;
+  bottom: 24px;
+  left: 24px;
+  text-transform: uppercase;
+  color: blue;
+  font: 100px, sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  size: 100px;
+  /* font-family: 'Oswald', sans-serif; */
+  padding-left: 20px;
+
+  font-family: balboa-plus-fill, sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+
+}
+
+h2{
+  size: 100px;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 20px;
+}
+
+/* #info{
+  position: absolute;
+  /* padding-top: -100px; */
+  top: 670px;
+} */
+/* #info.show{
+  opacity: 100%;
+} */
+/* #info.hide{
+  opacity:0%;
+} */
+
+#images{
+}
+
+#img_1{
+  position:absolute;
+  top: 100px;
+  left: 10vw;
+  shape-inside: polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+  shape-padding: 20px;
+  transition: all 0.5s ease;
+  -webkit-clip-path:  polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+  /* clip: rect( 24px, 50px, 58px, 40px); */
+}
+
+#img_1:hover{
+  shape-inside: polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+  -webkit-clip-path:  polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+  /* 279 × 230 */
+}
+
+/* .imageOneActive #img_1 {
+    width:1000px;
+    clip: rect( 0px, 0px, 0px, 0px);
+    transform: scale(1);
+}
+.imageOneActive #img_2 {
+    transform: translate(1000px, 0);
+}
+.imageOneActive #img_3 {
+    transform: translate(1000px, 0);
+}
+.imageOneActive #img_4 {
+    transform: translate(1000px, 0);
+}
+.imageOneActive #img_5 {
+    transform: translate(1000px, 0);
+}
+.imageOneActive #img_6 {
+    transform: translate(1000px, 0);
+}
+.imageOneActive #img_7 {
+    transform: translate(1000px, 0);
+} */
+
+#img_2{
+  position:absolute;
+  top: 210px;
+  left: 21vw;
+  shape-inside: polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+  shape-padding: 20px;
+  transition: all 0.5s ease;
+  -webkit-clip-path:  polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+  /* clip: rect( 25px, 51px, 60px, 45px); */
+}
+#img_2:hover{
+  shape-inside: polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+  -webkit-clip-path:  polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+}
+/* .imageTwoActive #img_2 {
+    width:1000px;
+    clip: rect( 0px, 0px, 0px, 0px);
+    transform: scale(1);
+}
+.imageTwoActive #img_1 {
+    transform: translate(-1000px, 0);
+}
+.imageTwoActive #img_3 {
+    transform: translate(1000px, 0);
+}
+.imageTwoActive #img_4 {
+    transform: translate(1000px, 0);
+}
+.imageTwoActive #img_5 {
+    transform: translate(1000px, 0);
+}
+.imageTwoActive #img_6 {
+    transform: translate(1000px, 0);
+}
+.imageTwoActive #img_7 {
+    transform: translate(1000px, 0);
+} */
+
+#img_3{
+  position:absolute;
+  top: 210px;
+  left: 32vw;
+  shape-inside: polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+  shape-padding: 20px;
+  transition: all 0.5s ease;
+  -webkit-clip-path:  polygon(50px 10px, 150px 10px, 150px 400px, 50px 400px);
+/* clip: rect( 28px, 52px, 59px, 46px); */
+}
+#img_3:hover{
+  shape-inside: polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+  -webkit-clip-path:  polygon(0px 0px, 600px 0px, 600px 800px, 0px 800px);
+}
+
+#img_4{
+  position:absolute;
+  width: 100px;
+  top: 50px;
+  left: 50vw;
+  transform: scale(10);
+  clip: rect(  89px, 53px, 131px, 45px);
+}
+
+#img_5{
+  position:absolute;
+  width: 108px;
+  top: 550px;
+  left: 60vw;
+  transform: scale(10);
+  clip: rect(   3px, 92px, 49px, 84px);
+}
+
+#img_6{
+  position: absolute;
+  width: 141px;
+  top: 473px;
+  left: 70vw;
+  transform: scale(10);
+  clip: rect( 10px, 94px, 53px, 84px);
+}
+
+#img_7{
+  position: absolute;
+  width: 154px;
+  top: 539px;
+  left: 80vw;
+  transform: scale(10);
+  clip: rect( 7px, 112px, 56px, 101px);
+}
