@@ -1,3 +1,113 @@
+// $("info").click(function() {
+//    $(this).toggleClass("show");
+//    $(this).toggleClass("hide");
+// });
+
+// $(document).ready(function() {
+//   $("#cf_onclick").click(function() {
+//   $("#cf2 img.top").toggleClass("hide");
+// });
+// });
+
+//reference : https://codepen.io/gbnikolov/pen/MaVBQL
+let imageOne = document.querySelector('#img_1')
+
+imageOne.addEventListener('click',function(){
+    document.body.classList.add('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+    console.log('hi')
+});
+
+let imageTwo = document.querySelector('#img_2')
+
+imageTwo.addEventListener('click',function(){
+    document.body.classList.add('imageTwoActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+});
+
+let imageThree = document.querySelector('#img_3')
+
+imageThree.addEventListener('click',function(){
+    document.body.classList.add('imageThreeActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+});
+
+let imageFour = document.querySelector('#img_4')
+
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageFourActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+});
+
+let imageFive = document.querySelector('#img_5')
+
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageFiveActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+});
+
+let imageSix = document.querySelector('#img_6')
+
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageSixActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageSevenActive')
+});
+\
+let imageSeven = document.querySelector('#img_7')
+
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageSevenActive')
+    document.body.classList.remove('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageFourActive')
+});
+
+// imageOne.addEventListener('click',function(){
+//     document.body.classList.add('imageOneActive')
+//     document.body.classList.remove('imageTwoActive')
+//     document.body.classList.remove('imageThreeActive')
+//     document.body.classList.remove('imageFourActive')
+//     document.body.classList.remove('imageFiveActive')
+//     document.body.classList.remove('imageSixActive')
+//     document.body.classList.remove('imageSevenActive')
+//     console.log('hi')
+// });
+
+
+
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
     window.webkitRequestAnimationFrame ||
@@ -13,10 +123,10 @@ var LineAnimation = (function() {
     this.startPos = startPos;
     this.endPos = endPos;
     this.lineWidth = lineWidth;
-    this.color = 0 + Math.random() * 100;
-    this.lightness = 50;
+    // this.hue = 175 + Math.random() * 75;
+    this.lightness = 100;
     this.angles = [Math.random() * 360, Math.random() * 360];
-    this.speed = 0.01 + Math.random() * 0.04;
+    this.speed = 0.000001 + Math.random() * 0.04;
     this.direction = Math.round(Math.random());
   }
 
@@ -76,6 +186,8 @@ var LineAnimation = (function() {
     mouse = getMousePosition(canvas);
     oldMousePos = mouse;
     nodeMesh = new NodeMesh();
+
+    // generatePreviewNodes(120);
 
     canvas.width = width;
     canvas.height = height;
