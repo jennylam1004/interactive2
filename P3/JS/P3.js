@@ -9,14 +9,20 @@
 // });
 // });
 
-// let imageOne = document.querySelector('#img_1')
-//
-// imageOne.addEventListener('click',function(){
-//     document.body.classList.add('imageOneActive')
-//     //you'd want to make sure that no other image class is still happening
-//     document.body.classList.remove('imageTwoActive')
-//     document.body.classList.remove('imageThreeActive') // etc
-// })
+//reference : https://codepen.io/gbnikolov/pen/MaVBQL
+let imageOne = document.querySelector('#img_1')
+
+imageOne.addEventListener('click',function(){
+    document.body.classList.toggleClass('imageOneActive')
+    document.body.classList.remove('imageTwoActive')
+    document.body.classList.remove('imageThreeActive')
+    document.body.classList.remove('imageFourActive')
+    document.body.classList.remove('imageFiveActive')
+    document.body.classList.remove('imageSixActive')
+    document.body.classList.remove('imageSevenActive')
+    console.log('hi')
+});
+
 
 
 window.requestAnimFrame = (function(){
