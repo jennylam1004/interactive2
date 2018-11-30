@@ -13,32 +13,20 @@
 let imageOne = document.querySelector('#img_1')
 
 imageOne.addEventListener('click',function(){
-    document.body.classList.toggle('imageOneActive')
+    document.body.classList.add('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageThreeActive')
     document.body.classList.remove('imageFourActive')
     document.body.classList.remove('imageFiveActive')
     document.body.classList.remove('imageSixActive')
     document.body.classList.remove('imageSevenActive')
-
+    console.log('hi')
 });
-
-// let imageOneUnactive = document.querySelector('#img_1 imageOneActive')
-//
-// imageOneUnactive.addEventListener('click',function(){
-//     document.body.classList.remove('imageOneActive')
-//     // document.body.classList.add('imageTwoUnactive')
-//     // document.body.classList.add('imageThreeUnactive')
-//     // document.body.classList.add('imageFourUnactive')
-//     // document.body.classList.add('imageFiveUnactive')
-//     // document.body.classList.add('imageSixUnactive')
-//     // document.body.classList.add('imageSevenUnactive')
-// });
 
 let imageTwo = document.querySelector('#img_2')
 
 imageTwo.addEventListener('click',function(){
-    document.body.classList.toggle('imageTwoActive')
+    document.body.classList.add('imageTwoActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageThreeActive')
     document.body.classList.remove('imageFourActive')
@@ -50,7 +38,7 @@ imageTwo.addEventListener('click',function(){
 let imageThree = document.querySelector('#img_3')
 
 imageThree.addEventListener('click',function(){
-    document.body.classList.toggle('imageThreeActive')
+    document.body.classList.add('imageThreeActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageFourActive')
@@ -62,7 +50,7 @@ imageThree.addEventListener('click',function(){
 let imageFour = document.querySelector('#img_4')
 
 imageFour.addEventListener('click',function(){
-    document.body.classList.toggle('imageFourActive')
+    document.body.classList.add('imageFourActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageThreeActive')
@@ -73,8 +61,8 @@ imageFour.addEventListener('click',function(){
 
 let imageFive = document.querySelector('#img_5')
 
-imageFive.addEventListener('click',function(){
-    document.body.classList.toggle('imageFiveActive')
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageFiveActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageThreeActive')
@@ -85,8 +73,8 @@ imageFive.addEventListener('click',function(){
 
 let imageSix = document.querySelector('#img_6')
 
-imageSix.addEventListener('click',function(){
-    document.body.classList.toggle('imageSixActive')
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageSixActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageThreeActive')
@@ -94,11 +82,11 @@ imageSix.addEventListener('click',function(){
     document.body.classList.remove('imageFourActive')
     document.body.classList.remove('imageSevenActive')
 });
-
+\
 let imageSeven = document.querySelector('#img_7')
 
-imageSeven.addEventListener('click',function(){
-    document.body.classList.toggle('imageSevenActive')
+imageFour.addEventListener('click',function(){
+    document.body.classList.add('imageSevenActive')
     document.body.classList.remove('imageOneActive')
     document.body.classList.remove('imageTwoActive')
     document.body.classList.remove('imageThreeActive')
@@ -106,6 +94,18 @@ imageSeven.addEventListener('click',function(){
     document.body.classList.remove('imageSixActive')
     document.body.classList.remove('imageFourActive')
 });
+
+// imageOne.addEventListener('click',function(){
+//     document.body.classList.add('imageOneActive')
+//     document.body.classList.remove('imageTwoActive')
+//     document.body.classList.remove('imageThreeActive')
+//     document.body.classList.remove('imageFourActive')
+//     document.body.classList.remove('imageFiveActive')
+//     document.body.classList.remove('imageSixActive')
+//     document.body.classList.remove('imageSevenActive')
+//     console.log('hi')
+// });
+
 
 
 window.requestAnimFrame = (function(){
@@ -126,7 +126,7 @@ var LineAnimation = (function() {
     // this.hue = 175 + Math.random() * 75;
     this.lightness = 100;
     this.angles = [Math.random() * 360, Math.random() * 360];
-    this.speed = 0.0001 + Math.random() * 0.009;
+    this.speed = 0.000001 + Math.random() * 0.04;
     this.direction = Math.round(Math.random());
   }
 
@@ -195,6 +195,19 @@ var LineAnimation = (function() {
     ctx.fillStyle = '#fff';
   }
 
+  function generatePreviewNodes(num) {
+    var i, node;
+    for (i = 0; i < num; i += 1) {
+      node = new Node({
+        x: Math.random() * width,
+        y: Math.random() * height
+      }, {
+        x: Math.random() * width,
+        y: Math.random() * height
+      }, 1 + Math.random());
+      nodeMesh.nodes.push(node);
+    }
+  }
 
   function render() {
     ctx.fillRect(0, 0, width, height);
@@ -208,7 +221,7 @@ var LineAnimation = (function() {
 
     node.lightness -= 1;
 
-    if (node.lightness <= 50) { nodeMesh.nodes.splice(i, 1) };
+    if (node.lightness <= 14) { nodeMesh.nodes.splice(i, 1) };
 
     node.angle -= node.speed;
 
