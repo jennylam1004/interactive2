@@ -29,7 +29,7 @@ p {
 
 h1{
   position: fixed;
-  top:695px;
+  top:690px;
   size: 100px;
   padding-top: -100px;
   /* font-family: 'Oswald', sans-serif; */
@@ -45,7 +45,7 @@ h1{
 
 h2{
   position: fixed;
-  top: 730px;
+  top: 725px;
   size: 100px;
   font-family: balboa-plus-inline, sans-serif;
 
