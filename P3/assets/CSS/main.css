@@ -2,7 +2,8 @@
 @import url("https://use.typekit.net/opt2ghy.css");
 @import url("https://use.typekit.net/opt2ghy.css");
 
-@media (min-width: 700px) and (max-width: 1524px) {
+
+@media (min-width: 700px) {
 
 	body {
 		background: #cccccc;
